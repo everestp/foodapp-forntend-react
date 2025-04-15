@@ -11,6 +11,7 @@ import Menubar from './components/Menubar/Menubar'
 import { Routes } from 'react-router-dom'
 import './App.css'
 import Navbar from './components/Sidebar/Navbar'
+import { ToastContainer} from 'react-toastify'
 
 const App = () => {
   const [sideBarVisible, setSideBarVisible] = useState(false);
@@ -18,7 +19,7 @@ const App = () => {
    
   return (
 <div className="d-flex" id="wrapper">
-        
+       
             <div className="border-end bg-white" id="sidebar-wrapper">
               
              <Navbar sideBarVisible={sideBarVisible}/>
@@ -27,7 +28,7 @@ const App = () => {
             <div id="page-content-wrapper">
               
              <Menubar toggleSideBar={toggleSideBar}/>
-               
+             <ToastContainer/>
                 <div className="container-fluid">
                     <Routes>
                         <Route path="/add" element={<AddFood/>} />

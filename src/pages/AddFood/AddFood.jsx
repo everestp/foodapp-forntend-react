@@ -9,8 +9,8 @@ const AddFood = () => {
   const [data, setData] = React.useState({
     name: '',
     description: '',
-    category: '',
-    price: 'Electronic'
+    category: 'Eelctronic',
+    price: ''
   });
 
   const onChangeHandler = (events) => {
@@ -39,6 +39,7 @@ try {
     toast.error('Error adding food!');
     console.log("DEBUG:Error Adding Food ",error);
 }
+
 
 
   }

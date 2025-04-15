@@ -1,6 +1,6 @@
 
 import { assets } from '../../assets/assets';
-
+import React from 'react';
 const AddFood = () => {
   const [image, setImage] = React.useState(null);
   const [data, setData] = React.useState({

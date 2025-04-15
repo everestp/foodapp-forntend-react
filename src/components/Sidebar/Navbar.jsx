@@ -1,6 +1,8 @@
+import { Link } from "react-router-dom"
+import { assets } from "../../assets/assets"
 
 
-const sidebar = () => {
+const Navbar = ({sideBarVisible}) => {
   return (
     <div className={`border-end bg-white ${sideBarVisible ? '' : 'd-none'}`} id="sidebar-wrapper">
     <div className="sidebar-heading border-bottom bg-light">
@@ -19,4 +21,4 @@ const sidebar = () => {
   )
 }
 
-export default sidebar
+export default Navbar

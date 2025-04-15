@@ -5,11 +5,12 @@ import { Route } from 'react-router-dom'
 import AddFood from './pages/AddFood/AddFood'
 import ListFood from './pages/ListFood/ListFood'
 import Orders from './pages/Orders/Orders'
-import Sidebar from './components/sidebar/sidebar'
+
 import Menubar from './components/Menubar/Menubar'
 
 import { Routes } from 'react-router-dom'
 import './App.css'
+import Navbar from './components/Sidebar/Navbar'
 
 const App = () => {
   const [sideBarVisible, setSideBarVisible] = useState(false);
@@ -19,7 +20,8 @@ const App = () => {
 <div className="d-flex" id="wrapper">
         
             <div className="border-end bg-white" id="sidebar-wrapper">
-             <Sidebar sideBarVisible={sideBarVisible}/>
+              
+             <Navbar sideBarVisible={sideBarVisible}/>
             </div>
       
             <div id="page-content-wrapper">

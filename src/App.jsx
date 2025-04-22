@@ -8,7 +8,7 @@ import Orders from './pages/Orders/Orders'
 
 import Menubar from './components/Menubar/Menubar'
 
-import { Routes } from 'react-router-dom'
+import { Routes } from 'react-router-dom'index.css
 import './App.css'
 import Navbar from './components/Sidebar/Navbar'
 import { ToastContainer} from 'react-toastify'
